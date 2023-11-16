@@ -965,10 +965,10 @@ if (tiles.length === 0) return; // Check if there are any tiles in the array
 
 tiles.forEach(tile => {
     tile.errorTarget = params.errorTarget;
-    tile.errorThreshold = 0.05
-    // tile.maxDepth = 3
-    // tile.autoDisableRendererCulling = false
-    // tile.loadSiblings = true
+    tile.errorThreshold = 1
+    tile.maxDepth = 4
+    tile.autoDisableRendererCulling = false
+    tile.loadSiblings = true
     tile.setCamera(camera);
     tile.setResolutionFromRenderer(camera, renderer);
 
