@@ -145,7 +145,7 @@ function addNewVideoElement(streamName,streamSrc){
     video.autoplay=true;
     video.muted=true;
     video.controls=true;
-    // video.hidden=true;
+    video.hidden=true;
     //video.loop=true;
     document.body.appendChild(video);
     video.src=streamSrc
